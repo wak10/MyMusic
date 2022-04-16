@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    //音を鳴らすためにSoundPlayerクラスのインスタンス生成
+    let soundPlayer = SoundPlayer()
+    
     var body: some View {
         ZStack{
             Image("background")
@@ -21,6 +24,7 @@ struct ContentView: View {
             HStack{
                 Button(action:{
                 //ボタンを押したときのアクション
+                    soundPlayer.cymbalPlay()
                 }){
                     Image("cymbal")
                         .renderingMode(.original)
