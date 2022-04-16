@@ -31,6 +31,7 @@ struct ContentView: View {
                 }
                 Button(action:{
                 //ボタンを押したときのアクション
+                    soundPlayer.guitarPlay()
                 }){
                     Image("guitar")
                         .renderingMode(.original)
