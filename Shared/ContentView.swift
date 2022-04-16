@@ -26,15 +26,15 @@ struct ContentView: View {
                 //ボタンを押したときのアクション
                     soundPlayer.cymbalPlay()
                 }){
-                    Image("cymbal")
-                        .renderingMode(.original)
+                //画像を表示する
+                ButtonImageView(imageName: "cymbal")
                 }
                 Button(action:{
                 //ボタンを押したときのアクション
                     soundPlayer.guitarPlay()
                 }){
-                    Image("guitar")
-                        .renderingMode(.original)
+                //画像を表示する
+                ButtonImageView(imageName: "guitar")
                 }
             }
         }
